@@ -147,7 +147,7 @@ class CNN():
         return conv_last, gap, class_prob
 
     def p(self,t):
-        print t.name, t.get_shape()
+        print (t.name, t.get_shape())
 
     def get_classmap(self, class_, conv_last):
         with tf.variable_scope("GAP", reuse=True):
